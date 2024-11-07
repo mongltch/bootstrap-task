@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .navbar-brand{
+            font-size: 30px;
+            font-weight: 600;
+        }
+        #join{
+            font-size: 13px;
+        }
+        .logo{
+            display: flex;
+        }
+        li a{
+            margin-left: 20px;
+        }
+        .maintitle{
+            text-align: center;
+            margin-top: 30px;
+            margin-left: 400px;
+            width: 650px;
+        }
+        .cards{
+            display: flex; 
+            justify-content: space-between;
+            width: 1200px;
+            padding: 50px;
+            margin-left: 150px;
+        }
+        .carousel-inner{
+            width: 900px;
+            margin-left: 300px;
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <div class="logo">
+                    <div>
+                        <a class="navbar-brand" href="#">MONGLTCH</a>
+                    </div>
+                    <div class="MEDJED">
+                        <a class="navbar-brand" href="#" id="join">Partnered with MEDJED</a>
+                    </div>
+                </div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Join Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+<main>
+    <div class="maintitle">
+    <h1>MEDJED</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt provident explicabo, at quis adipisci dolorem amet molestiae consectetur ipsum, quae totam beatae alias rem sunt omnis eaque! Exercitationem, tempora illo?</p>
+    </div>
+    <section id="slider">
+    <div class="cards">
+            <div class="card" style="width: 25rem;">
+                <img src="images/cristofer-maximilian-5NyN-wyH3qE-unsplash(1).jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo sapiente iste exercitationem, rem facere tempore mollitia ut nesciunt nostrum repellat sint!</p>
+                </div>
+              </div>
+
+              <div class="card" style="width: 25rem;">
+                <img src="images/karsten-winegeart-8VRN0YKvRm8-unsplash(1).jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quod dolorum est iusto eligendi eaque culpa reprehenderit expedita fuga.</p>
+                </div>
+              </div>
+
+              <div class="card" style="width: 25rem;">
+                <img src="images/samsung-memory-ow8IIlkzbUw-unsplash(1).png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dignissimos laudantium sint fuga? Modi perspiciatis, quaerat aliquid voluptas illum natus.</p>
+                </div>
+              </div>
+    </div>
+    </section>
+    <section>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/eberhard-grossgasteiger-NueoO241RLc-unsplash(1).jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/vlad-zaytsev-ZQ3U-aK14Rs-unsplash(1).jpg" class="d-block w-100" alt="flower">
+              </div>
+              <div class="carousel-item">
+                <img src="images/gilley-aguilar-NnthSp3BzBY-unsplash(1).jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+</main>
+</body>
+</html>
